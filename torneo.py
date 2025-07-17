@@ -20,7 +20,7 @@ st.subheader("viva la democrazia")
 for i, (s1, s2) in enumerate(partite):
     risultato = st.radio(
         f"{s1.upper()} vs {s2.upper()}",
-        options=["🤙🏼", s1, "Pareggio", s2],
+        options=["🤙🏼", s1, "PAREGGIO", s2],
         index=0,  # di default seleziona "?"
         key=f"partita_{i}",
         horizontal=True,
