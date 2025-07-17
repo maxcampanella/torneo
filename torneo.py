@@ -6,7 +6,7 @@ import pandas as pd
 st.title("Torneo Siciliano")
 
 # Squadre predefinite
-squadre = ["bea", "gio", "luna", "mara"]
+squadre = ["Max", "Sergio", "Leo", "Gianni", "Passe", "Compa", "Tony", "Chri"]
 
 # Tutti contro tutti
 partite = list(itertools.combinations(squadre, 2))
