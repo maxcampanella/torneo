@@ -10,16 +10,15 @@ st.title("LA BRISCOLA SICILIANA")
 squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
 
 
-"""
-squadre = [
-    "zocchi", "barchi", "mattiuz", "abruscato", "campanella", "dessilani",
-    "chiesa", "muccino", "mancuso", "balzano", "iacometti", "saronne", "cesti",
-    "comolla", "tagliabue", "santeusanio", "pezzotta", "panella", "mari", "codini",
-    "repossi", "maggiora", "maggiori", "marghe_tipa_gio", "peroni", "tomova",
-    "olmo", "putrino", "minniti", "crush_culo", "beltrame", "invernizzi",
-    "divittorio", "fant", "pero", "delsignore", "rana"
-]
-"""
+#squadre = [
+#    "zocchi", "barchi", "mattiuz", "abruscato", "campanella", "dessilani",
+#    "chiesa", "muccino", "mancuso", "balzano", "iacometti", "saronne", "cesti",
+#    "comolla", "tagliabue", "santeusanio", "pezzotta", "panella", "mari", "codini",
+#    "repossi", "maggiora", "maggiori", "marghe_tipa_gio", "peroni", "tomova",
+#    "olmo", "putrino", "minniti", "crush_culo", "beltrame", "invernizzi",
+#    "divittorio", "fant", "pero", "delsignore", "rana"
+#]
+
 
 # Mischia le partite solo una volta
 if "partite" not in st.session_state:
