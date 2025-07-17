@@ -26,22 +26,22 @@ for i, (s1, s2) in enumerate(partite):
 
     # Aggiorna classifica
     if risultato == s1:
-        classifica[s1]["Punti"] += 3
-        classifica[s1]["Vinte"] += 1
-        classifica[s2]["Perse"] += 1
+        classifica[s1]["PUNTI"] += 3
+        classifica[s1]["Vittorie"] += 1
+        classifica[s2]["Sconfitte"] += 1
     elif risultato == s2:
-        classifica[s2]["Punti"] += 3
-        classifica[s2]["Vinte"] += 1
-        classifica[s1]["Perse"] += 1
+        classifica[s2]["PUNTI"] += 3
+        classifica[s2]["Vittorie"] += 1
+        classifica[s1]["Sconfitte"] += 1
     else:
-        classifica[s1]["Punti"] += 1
-        classifica[s2]["Punti"] += 1
-        classifica[s1]["Pareggi"] += 1
-        classifica[s2]["Pareggi"] += 1
+        classifica[s1]["PUNTI"] += 1
+        classifica[s2]["PUNTI"] += 1
+        classifica[s1]["Sconfitte"] += 1
+        classifica[s2]["Sconfitte"] += 1
 
 # Mostra classifica
 df = pd.DataFrame.from_dict(classifica, orient="index")
-df = df.sort_values(by=["Punti", "Vinte"], ascending=False)
+df = df.sort_values(by=["PUNTI", "Vittorie"], ascending=False)
 
 st.markdown("---")
 st.markdown("---")
