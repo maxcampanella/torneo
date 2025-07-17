@@ -5,20 +5,21 @@ import random
 
 st.title("LA BRISCOLA SICILIANA")
 
-# SQUADRE
+#__________________________________SQUADRE_________________________________________________
 
-squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
+#squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
 
 
-#squadre = [
-#    "ZOCCHI", "BARCHI", "MATTIUZ", "ABRUSCATO", "CAMPANELLA", "DESSILANI",
-#    "CHIESA", "MUCCINO", "MANCUSO", "BALZANO", "IACOMETTI", "SARONNE", "CESTI",
-#    "COMOLLA", "TAGLIABUE", "SANTEUSANIO", "PEZZOTTA", "PANELLA", "MARI", "CODINI",
-#    "REPOSSI", "MAGGIORA", "MAGGIORI", "MARGHE_TIPA_GIO", "PERONI", "TOMOVA",
-#    "OLMO", "PUTRINO", "MINNITI", "CRUSH_CULO", "BELTRAME", "INVERNIZZI",
-#    "DIVITTORIO", "FANT", "PERO", "DELSIGNORE", "RANA"
-#]
-
+squadre = [
+    "ZOCCHI", "BARCHI", "MATTIUZ", "ABRUSCATO", "CAMPANELLA", "DESSILANI",
+    "CHIESA", "MUCCINO", "MANCUSO", 
+    "BALZANO", "IACOMETTI", "SARONNE", "CESTI",
+    "COMOLLA", "TAGLIABUE", "SANTEUSANIO", "PEZZOTTA", "PANELLA", "MARI", "CODINI",
+    "REPOSSI", "MAGGIORA", "MAGGIORI", "FACHERIS", "PERONI", "TOMOVA",
+    "OLMO", "PUTRINO", "MINNITI", "CRUSH_CULO", "BELTRAME", "INVERNIZZI",
+    "DIVITTORIO", "FANT", "PERO", "DELSIGNORE", "RANA"
+]
+#__________________________________________________________________________________________
 
 # Mischia le partite solo una volta
 if "partite" not in st.session_state:
