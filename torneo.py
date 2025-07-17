@@ -44,6 +44,13 @@ df = pd.DataFrame.from_dict(classifica, orient="index")
 df = df.sort_values(by=["Punti", "Vinte"], ascending=False)
 
 st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
 st.write("")
 st.write("")
 
