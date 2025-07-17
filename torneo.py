@@ -17,7 +17,7 @@ squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
 #    "COMOLLA", "TAGLIABUE", "SANTEUSANIO", "PEZZOTTA", "PANELLA", "MARI", "CODINI",
 #    "REPOSSI", "MAGGIORA", "MAGGIORI", "FACHERIS", "PERONI", "TOMOVA",
 #    "OLMO", "PUTRINO", "MINNITI", "CRUSH_CULO", "BELTRAME", "INVERNIZZI",
-#    "DIVITTORIO", "FANT", "PERO", "DELSIGNORE", "RANA", "BEMBO", "CAVUTO", 
+#    "DIVITTORIO", "FANT", "PERO", "DELSIGNORE", "RANA", "BEMBO", 
 #    "IMPALONI", "PEZZANA"
 #]
 #__________________________________________________________________________________________
