@@ -11,12 +11,12 @@ squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
 
 
 #squadre = [
-#    "zocchi", "barchi", "mattiuz", "abruscato", "campanella", "dessilani",
-#    "chiesa", "muccino", "mancuso", "balzano", "iacometti", "saronne", "cesti",
-#    "comolla", "tagliabue", "santeusanio", "pezzotta", "panella", "mari", "codini",
-#    "repossi", "maggiora", "maggiori", "marghe_tipa_gio", "peroni", "tomova",
-#    "olmo", "putrino", "minniti", "crush_culo", "beltrame", "invernizzi",
-#    "divittorio", "fant", "pero", "delsignore", "rana"
+#    "ZOCCHI", "BARCHI", "MATTIUZ", "ABRUSCATO", "CAMPANELLA", "DESSILANI",
+#    "CHIESA", "MUCCINO", "MANCUSO", "BALZANO", "IACOMETTI", "SARONNE", "CESTI",
+#    "COMOLLA", "TAGLIABUE", "SANTEUSANIO", "PEZZOTTA", "PANELLA", "MARI", "CODINI",
+#    "REPOSSI", "MAGGIORA", "MAGGIORI", "MARGHE_TIPA_GIO", "PERONI", "TOMOVA",
+#    "OLMO", "PUTRINO", "MINNITI", "CRUSH_CULO", "BELTRAME", "INVERNIZZI",
+#    "DIVITTORIO", "FANT", "PERO", "DELSIGNORE", "RANA"
 #]
 
 
