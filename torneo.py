@@ -1,6 +1,7 @@
 import streamlit as st
 import itertools
 import pandas as pd
+import random  # <--- aggiunto per mescolare
 
 st.title("LA BRISCOLA SICILIANA")
 
@@ -9,6 +10,7 @@ squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
 
 # Tutti contro tutti
 partite = list(itertools.combinations(squadre, 2))
+random.shuffle(partite)  # <--- ordine casuale delle sfide
 
 # Dizionario classifica
 classifica = {s: {"Punti": 0, "Vittorie": 0, "Pareggi": 0, "Sconfitte": 0} for s in squadre}
@@ -33,7 +35,6 @@ for i, (s1, s2) in enumerate(partite):
 
     risultato = opzioni[scelta]
 
-    # Solo se è stata fatta una scelta valida
     if risultato == s1:
         classifica[s1]["Punti"] += 3
         classifica[s1]["Vittorie"] += 1
@@ -48,7 +49,6 @@ for i, (s1, s2) in enumerate(partite):
         classifica[s1]["Pareggi"] += 1
         classifica[s2]["Pareggi"] += 1
 
-    # Riga divisoria tra partite
     st.markdown("---")
 
 # Costruzione classifica
@@ -59,6 +59,5 @@ df = df.sort_values(by=["Punti", "Vittorie"], ascending=False)
 for _ in range(20):
     st.markdown("&nbsp;", unsafe_allow_html=True)
 
-# Mostra classifica finale
 st.subheader("🏆 Classifica finale")
 st.dataframe(df.style.format(precision=0))
