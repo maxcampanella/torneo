@@ -7,6 +7,7 @@ st.title("Torneo Siciliano")
 
 # Squadre predefinite
 squadre = ["bea", "gio", "luna", "mara"]
+
 # Tutti contro tutti
 partite = list(itertools.combinations(squadre, 2))
 
@@ -19,12 +20,13 @@ st.subheader("Viva la democrazia")
 for i, (s1, s2) in enumerate(partite):
     risultato = st.radio(
         f"{s1.upper()} vs {s2.upper()}",
-        options=[s1, "Pareggio", s2],
+        options=["?", s1, "Pareggio", s2],
+        index=0,  # di default seleziona "?"
         key=f"partita_{i}",
         horizontal=True,
     )
 
-    # Aggiorna classifica
+    # Solo se è stata fatta una scelta valida
     if risultato == s1:
         classifica[s1]["PUNTI"] += 3
         classifica[s1]["Vittorie"] += 1
@@ -33,37 +35,21 @@ for i, (s1, s2) in enumerate(partite):
         classifica[s2]["PUNTI"] += 3
         classifica[s2]["Vittorie"] += 1
         classifica[s1]["Sconfitte"] += 1
-    else:
+    elif risultato == "Pareggio":
         classifica[s1]["PUNTI"] += 1
         classifica[s2]["PUNTI"] += 1
-        classifica[s1]["Sconfitte"] += 1
-        classifica[s2]["Sconfitte"] += 1
+        classifica[s1]["Pareggi"] += 1
+        classifica[s2]["Pareggi"] += 1
+    # Se "?" → non aggiorniamo nulla
 
-# Mostra classifica
+# Mostra classifica solo se almeno una partita è stata giocata
 df = pd.DataFrame.from_dict(classifica, orient="index")
 df = df.sort_values(by=["PUNTI", "Vittorie"], ascending=False)
 
+# Spazio visivo
 st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-st.markdown("---")
-
-
+for _ in range(20):
+    st.markdown("&nbsp;", unsafe_allow_html=True)
 
 st.subheader("🏆 Classifica finale")
 st.dataframe(df.style.format(precision=0))
