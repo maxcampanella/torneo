@@ -3,11 +3,10 @@ import streamlit as st
 import itertools
 import pandas as pd
 
-st.title("Torneo all'italiana - Seleziona i vincitori")
+st.title("Torneo Siciliano")
 
 # Squadre predefinite
 squadre = ["bea", "gio", "luna", "mara"]
-
 # Tutti contro tutti
 partite = list(itertools.combinations(squadre, 2))
 
@@ -43,6 +42,11 @@ for i, (s1, s2) in enumerate(partite):
 # Mostra classifica
 df = pd.DataFrame.from_dict(classifica, orient="index")
 df = df.sort_values(by=["Punti", "Vinte"], ascending=False)
+
+st.markdown("---")
+st.write("")
+st.write("")
+
 
 st.subheader("🏆 Classifica finale")
 st.dataframe(df.style.format(precision=0))
