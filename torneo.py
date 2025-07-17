@@ -3,10 +3,10 @@ import streamlit as st
 import itertools
 import pandas as pd
 
-st.title("Torneo Siciliano")
+st.title("LA BRISCOLA SICILIANA")
 
 # Squadre predefinite
-squadre = ["Max", "Sergio", "Leo", "Gianni", "Passe", "Compa", "Tony", "Chri"]
+squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
 
 # Tutti contro tutti
 partite = list(itertools.combinations(squadre, 2))
@@ -15,7 +15,7 @@ partite = list(itertools.combinations(squadre, 2))
 classifica = {s: {"PUNTI": 0, "Vittorie": 0, "Pareggi": 0, "Sconfitte": 0} for s in squadre}
 
 # Mostra ogni partita e chiedi il risultato
-st.subheader("Viva la democrazia")
+st.subheader("viva la democrazia")
 
 for i, (s1, s2) in enumerate(partite):
     risultato = st.radio(
