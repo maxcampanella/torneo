@@ -38,7 +38,8 @@ for i, (s1, s2) in enumerate(partite):
         classifica[s2]["Punti"] += 1
         classifica[s1]["Pareggi"] += 1
         classifica[s2]["Pareggi"] += 1
-
+st.markdown("---")
+st.markdown("---")
 # Mostra classifica
 df = pd.DataFrame.from_dict(classifica, orient="index")
 df = df.sort_values(by=["Punti", "Vinte"], ascending=False)
@@ -51,8 +52,18 @@ st.markdown("---")
 st.markdown("---")
 st.markdown("---")
 st.markdown("---")
-st.write("")
-st.write("")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+st.markdown("---")
+
 
 
 st.subheader("🏆 Classifica finale")
