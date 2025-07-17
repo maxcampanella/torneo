@@ -4,10 +4,6 @@ import pandas as pd
 
 st.title("LA BRISCOLA SICILIANA")
 
-# Pulsante per azzerare tutto
-if st.button("🔄 Azzeramento - Ricomincia da capo"):
-    st.experimental_rerun()
-
 # Squadre predefinite
 squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
 
