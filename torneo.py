@@ -4,6 +4,10 @@ import pandas as pd
 
 st.title("LA BRISCOLA SICILIANA")
 
+# Pulsante per azzerare tutto
+if st.button("🔄 Azzeramento - Ricomincia da capo"):
+    st.experimental_rerun()
+
 # Squadre predefinite
 squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
 
@@ -19,7 +23,7 @@ for i, (s1, s2) in enumerate(partite):
     opzioni = {
         "🤙🏼": None,
         s1: s1,
-        "PAREGGIO": "pareggio",
+        "PAREGGIO": "PAREGGIO",  # <--- correggiamo il valore logico
         s2: s2
     }
 
@@ -42,13 +46,13 @@ for i, (s1, s2) in enumerate(partite):
         classifica[s2]["Punti"] += 3
         classifica[s2]["Vittorie"] += 1
         classifica[s1]["Sconfitte"] += 1
-    elif risultato == "pareggio":
+    elif risultato == "PAREGGIO":
         classifica[s1]["Punti"] += 1
         classifica[s2]["Punti"] += 1
         classifica[s1]["Pareggi"] += 1
         classifica[s2]["Pareggi"] += 1
 
-    # Riga divisoria tra le partite
+    # Riga divisoria tra partite
     st.markdown("---")
 
 # Costruzione classifica
