@@ -15,7 +15,7 @@ partite = list(itertools.combinations(squadre, 2))
 classifica = {s: {"PUNTI": 0, "Vittorie": 0, "Pareggi": 0, "Sconfitte": 0} for s in squadre}
 
 # Mostra ogni partita e chiedi il risultato
-st.subheader("viva la democrazia")
+st.subheader("")
 
 for i, (s1, s2) in enumerate(partite):
     risultato = st.radio(
