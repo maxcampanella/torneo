@@ -5,8 +5,11 @@ import random
 
 st.title("LA BRISCOLA SICILIANA")
 
-# Squadre predefinite
+# SQUADRE
+
 squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
+
+
 """
 squadre = [
     "zocchi", "barchi", "mattiuz", "abruscato", "campanella", "dessilani",
@@ -17,6 +20,7 @@ squadre = [
     "divittorio", "fant", "pero", "delsignore", "rana"
 ]
 """
+
 # Mischia le partite solo una volta
 if "partite" not in st.session_state:
     partite = list(itertools.combinations(squadre, 2))
