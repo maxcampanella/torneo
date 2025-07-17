@@ -11,10 +11,10 @@ squadre = ["bea", "gio", "luna", "mara"]
 partite = list(itertools.combinations(squadre, 2))
 
 # Dizionario classifica
-classifica = {s: {"Punti": 0, "Vinte": 0, "Pareggi": 0, "Perse": 0} for s in squadre}
+classifica = {s: {"PUNTI": 0, "Vittorie": 0, "Pareggi": 0, "Sconfitte": 0} for s in squadre}
 
 # Mostra ogni partita e chiedi il risultato
-st.subheader("Seleziona il risultato per ogni partita:")
+st.subheader("Viva la democrazia")
 
 for i, (s1, s2) in enumerate(partite):
     risultato = st.radio(
@@ -22,6 +22,8 @@ for i, (s1, s2) in enumerate(partite):
         options=[s1, "Pareggio", s2],
         key=f"partita_{i}",
         horizontal=True,
+        st.markdown("---")
+        st.markdown("---")
     )
 
     # Aggiorna classifica
@@ -38,8 +40,7 @@ for i, (s1, s2) in enumerate(partite):
         classifica[s2]["Punti"] += 1
         classifica[s1]["Pareggi"] += 1
         classifica[s2]["Pareggi"] += 1
-st.markdown("---")
-st.markdown("---")
+
 # Mostra classifica
 df = pd.DataFrame.from_dict(classifica, orient="index")
 df = df.sort_values(by=["Punti", "Vinte"], ascending=False)
