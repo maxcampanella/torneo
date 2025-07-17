@@ -35,7 +35,7 @@ for i, (s1, s2) in enumerate(partite):
         classifica[s2]["PUNTI"] += 3
         classifica[s2]["Vittorie"] += 1
         classifica[s1]["Sconfitte"] += 1
-    elif risultato == "Pareggio":
+    elif risultato == "PAREGGIO":
         classifica[s1]["PUNTI"] += 1
         classifica[s2]["PUNTI"] += 1
         classifica[s1]["Pareggi"] += 1
