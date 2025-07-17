@@ -20,7 +20,7 @@ for i, (s1, s2) in enumerate(partite):
 
     scelta = st.radio(
         f"{s1.upper()} vs {s2.upper()}",
-        options=list(opzioni.keys()),
+        options=opzioni,
         index=0,
         key=f"partita_{i}",
         horizontal=True,
