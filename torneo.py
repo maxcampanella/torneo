@@ -16,11 +16,10 @@ classifica = {s: {"Punti": 0, "Vittorie": 0, "Pareggi": 0, "Sconfitte": 0} for s
 # Mostra ogni partita e chiedi il risultato
 for i, (s1, s2) in enumerate(partite):
     # Mappa opzioni visive → valori logici
-    opzioni = {"🤙🏼", s1, "PAREGGIO", s2}
+    options = ["🤙🏼", s1, "PAREGGIO", s2]
 
     scelta = st.radio(
         f"{s1.upper()} vs {s2.upper()}",
-        options=opzioni,
         index=0,
         key=f"partita_{i}",
         horizontal=True,
