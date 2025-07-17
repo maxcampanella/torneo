@@ -22,8 +22,6 @@ for i, (s1, s2) in enumerate(partite):
         options=[s1, "Pareggio", s2],
         key=f"partita_{i}",
         horizontal=True,
-        st.markdown("---")
-        st.markdown("---")
     )
 
     # Aggiorna classifica
