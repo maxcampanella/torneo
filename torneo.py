@@ -18,8 +18,7 @@ squadre = [
     "REPOSSI", "MAGGIORA", "MAGGIORI", "FACHERIS", "PERONI", "TOMOVA",
     "OLMO", "PUTRINO", "MINNITI", "CRUSH_CULO", "BELTRAME", "INVERNIZZI",
     "DIVITTORIO", "FANT", "PERO", "DELSIGNORE", "RANA", "BEMBO", 
-    "IMPALONI", "PEZZANA", "GIANCOLA"
-],
+    "IMPALONI", "PEZZANA", "GIANCOLA" ]
 __________________________________________________________________________________________
 
 # Mischia le partite solo una volta
@@ -77,5 +76,6 @@ for _ in range(20):
 
 st.subheader("🏆 Classifica finale")
 st.dataframe(df.style.format(precision=0))
+
 
 
