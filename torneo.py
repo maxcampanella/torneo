@@ -7,20 +7,20 @@ st.title("LA BRISCOLA SICILIANA")
 
 #__________________________________SQUADRE_________________________________________________
 
-squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
+#squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
 
 
-#squadre = [
-#    "ZOCCHI", "BARCHI", "MATTIUZ", "ABRUSCATO", "DESSILANI",
-#    "CHIESA", "MUCCINO", "MANCUSO", 
-#    "BALZANO", "IACOMETTI", "SARONNE", "CESTI",
-#    "COMOLLA", "TAGLIABUE", "SANTEUSANIO", "PEZZOTTA", "PANELLA", "MARI", "CODINI",
-#    "REPOSSI", "MAGGIORA", "MAGGIORI", "FACHERIS", "PERONI", "TOMOVA",
-#    "OLMO", "PUTRINO", "MINNITI", "CRUSH_CULO", "BELTRAME", "INVERNIZZI",
-#    "DIVITTORIO", "FANT", "PERO", "DELSIGNORE", "RANA", "BEMBO", 
-#    "IMPALONI", "PEZZANA", "GIANCOLA"
-#]
-#__________________________________________________________________________________________
+squadre = [
+    "ZOCCHI", "BARCHI", "MATTIUZ", "ABRUSCATO", "DESSILANI",
+    "CHIESA", "MUCCINO", "MANCUSO", 
+    "BALZANO", "IACOMETTI", "SARONNE", "CESTI",
+    "COMOLLA", "TAGLIABUE", "SANTEUSANIO", "PEZZOTTA", "PANELLA", "MARI", "CODINI",
+    "REPOSSI", "MAGGIORA", "MAGGIORI", "FACHERIS", "PERONI", "TOMOVA",
+    "OLMO", "PUTRINO", "MINNITI", "CRUSH_CULO", "BELTRAME", "INVERNIZZI",
+    "DIVITTORIO", "FANT", "PERO", "DELSIGNORE", "RANA", "BEMBO", 
+    "IMPALONI", "PEZZANA", "GIANCOLA"
+]
+__________________________________________________________________________________________
 
 # Mischia le partite solo una volta
 if "partite" not in st.session_state:
@@ -77,3 +77,4 @@ for _ in range(20):
 
 st.subheader("🏆 Classifica finale")
 st.dataframe(df.style.format(precision=0))
+
