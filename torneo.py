@@ -7,7 +7,7 @@ st.title("LA BRISCOLA SICILIANA")
 
 #__________________________________SQUADRE_________________________________________________
 
-squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI"]
+squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI","BERRO", "LELE", "DANI"]
 
 
 #squadre = [
@@ -69,6 +69,7 @@ for _ in range(20):
 
 st.subheader("🏆 Classifica finale")
 st.dataframe(df.style.format(precision=0))
+
 
 
 
