@@ -10,7 +10,7 @@ st.title("LA BRISCOLA SICILIANA")
 # squadre = ["MAX", "SERGIO", "LEO", "GIANNI", "PASSE", "COMPA", "TONY", "CHRI","BERRO", "LELE", "DANI"]
 
 
-#squadre = [
+squadre = [
     "ZOCCHI", "BARCHI", "MATTIUZ", "ABRUSCATO", "DESSILANI", "CHIESA", "MUCCINO", "MANCUSO", "BALZANO", "IACOMETTI", "SARONNE", "CESTI", "COMOLLA", "TAGLIABUE", "SANTEUSANIO", "PEZZOTTA", "PANELLA", "MARI", "CODINI", "REPOSSI", "MAGGIORA", "MAGGIORI", "FACHERIS", "PERONI", "TOMOVA", "OLMO", "PUTRINO", "MINNITI", "CRUSH_CULO", "BELTRAME", "INVERNIZZI", "DIVITTORIO", "FANT", "PERO", "DELSIGNORE", "RANA", "BEMBO", "IMPALONI", "PEZZANA", "GIANCOLA" ]
 #__________________________________________________________________________________________
 
@@ -69,6 +69,7 @@ for _ in range(20):
 
 st.subheader("🏆 Classifica finale")
 st.dataframe(df.style.format(precision=0))
+
 
 
 
